@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shadow</title>
+    <style>
+        h1.ex1 {
+            text-shadow: 2px 2px;
+        }
+
+        h1.ex2 {
+            text-shadow: 2px 2px red;
+        }
+
+        h1.ex3 {
+            text-shadow: 2px 2px 5px red;
+        }
+        h1.ex4 {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        h1.ex5 {
+            text-shadow: 0 0 3px #FF0000;
+        }
+
+        h1.ex6 {
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+
+        h1.ex7 {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        h1.ex8 {
+            color: yellow;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        div.ex1 {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: yellow;
+            box-shadow: 10px 10px;
+        }
+
+        div.ex2 {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: yellow;
+            box-shadow: 10px 10px grey;
+        }
+
+        div.ex3 {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: yellow;
+            box-shadow: 10px 10px 5px grey;
+        }
+
+        div.card {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+        }
+
+        div.container1 {
+            padding: 10px;
+        }
+
+        div.polaroid {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.container2 {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="ex1">Text-shadow effect!</h1>
+    <h1 class="ex2">Text-shadow effect!</h1>
+    <h1 class="ex3">Text-shadow effect!</h1>
+    <h1 class="ex4">Text-shadow effect!</h1>
+    <h1 class="ex5">Text-shadow with red neon glow!</h1>
+    <h1 class="ex6">Text-shadow with red and blue neon glow!</h1>
+    <h1 class="ex7">Text-shadow effect!</h1>
+    <h1 class="ex8">Border around text!</h1>
+
+    <h1>The box-shadow Property</h1>
+
+    <div class="ex1">This is a div element with a box-shadow</div>
+    <br>
+    <div class="ex2">This is a div element with a box-shadow</div>
+    <br>
+    <div class="ex3">This is a div element with a box-shadow</div>
+
+    <h2>Cards</h2>
+
+    <p>The box-shadow property can be used to create paper-like cards:</p>
+
+    <div class="card">
+        <div class="header">
+            <h1>1</h1>
+        </div>
+
+        <div class="container1">
+            <p>January 1, 2016</p>
+        </div>
+    </div>
+
+    <h2>Polaroid Images / Cards</h2>
+
+    <p>The box-shadow property can be used to create paper-like cards:</p>
+
+    <div class="polaroid">
+    <img src="image/bg3.jpg" alt="Norway" style="width:100%">
+        <div class="container2">
+            <p>Hardanger, Norway</p>
+        </div>
+    </div>
+</body>
+</html>
