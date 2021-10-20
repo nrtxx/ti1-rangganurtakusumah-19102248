@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transition</title>
+    <style>
+        div.ex1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+        }
+
+        div.ex1:hover {
+            width: 300px;
+        }
+
+        div.ex2 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, height 4s;
+        }
+
+        div.ex2:hover {
+            width: 300px;
+            height: 300px;
+        }
+
+        div.ex3 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+        }
+
+        #timing1 {transition-timing-function: linear;}
+        #timing2 {transition-timing-function: ease;}
+        #timing3 {transition-timing-function: ease-in;}
+        #timing4 {transition-timing-function: ease-out;}
+        #timing5 {transition-timing-function: ease-in-out;}
+
+        div.ex3:hover {
+        width: 300px;
+        }
+
+        div.ex4 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 3s;
+            transition-delay: 1s;
+        }
+
+        div.ex4:hover {
+            width: 300px;
+        }
+
+        div.ex5 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        div.ex5:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+
+        div.ex6 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s linear 1s;
+        }
+
+        div.ex6:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The transition Property</h1>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div class="ex1"></div>
+
+    <h1>The transition Property</h1>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div class="ex2"></div>
+
+    <h1>The transition-timing-function Property</h1>
+    <p>Hover over the div elements below, to see the different speed curves:</p>
+    <div class="ex3" id="timing1">linear</div><br>
+    <div class="ex3" id="timing2">ease</div><br>
+    <div class="ex3" id="timing3">ease-in</div><br>
+    <div class="ex3" id="timing4">ease-out</div><br>
+    <div class="ex3" id="timing5">ease-in-out</div><br>
+
+    <h1>The transition-delay Property</h1>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div class="ex4"></div>
+    <p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+    <h1>Transition + Transform</h1>
+    <p>Hover over the div element below:</p>
+    <div class="ex5"></div>
+
+    <h1>Using The transition Shorthand Property</h1>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div class="ex6"></div>
+    <p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>
