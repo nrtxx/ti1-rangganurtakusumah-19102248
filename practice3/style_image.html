@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Style Images</title>
+    <style>
+        img #rounded {
+            border-radius: 8px;
+        }
+
+        img #thumbnail {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        }
+
+        img #responsive {
+            max-width: 100%;
+            height: auto; 
+        }
+
+        img #center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.polaroid {
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+        }
+
+        div.container {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        img #transparency {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h2>Rounded Image</h2>
+    <p>Use the border-radius property to create rounded images:</p>
+    <img id="rounded" src="image/bg.jpg" alt="Color" width="300" height="300">
+
+    <h2>Thumbnail Image</h2>
+    <p>Use the border property to create thumbnail images:</p>
+    <img id="thumbnail" src="image/bg.jpg" alt="Color" style="width:150px">
+
+    <h2>Responsive Image</h2>
+    <p>Responsive images will automatically adjust to fit the size of the screen.</p>
+    <p>Resize the browser window to see the effect:</p>
+    <img id="responsive" src="image/bg3.jpg" alt="City" width="1000" height="300">
+
+    <h2>Center an Image</h2>
+    <p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+    <img src="image/bg3.jpg" alt="City" style="width:50%">
+
+    <h2>Responsive Polaroid Images / Cards</h2>
+    <div class="polaroid">
+        <img src="image/bg.jpg" alt="Color" style="width:100%">
+        <div class="container">
+            <p>Colors</p>
+        </div>
+    </div>
+
+    <div class="polaroid">
+        <img src="image/bg2.jpg" alt="Abstract" style="width:100%">
+        <div class="container">
+            <p>Abstract</p>
+        </div>
+    </div>
+
+    <h1>Image Transparency</h1>
+    <p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+    <p>Image with 50% opacity:</p>
+    <img src="image/bg.jpg" alt="Colors" width="170" height="100">
+
+
+</body>
+</html>
