@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            }
+
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .aside {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Rangga Nurta Kusumah | 19102248 | IF07TI1</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <a href="inline_style.html">
+          <li>Inline Style</li>
+      </a>
+      <a href="embedded_style.html">
+          <li>Embedded Style</li>
+      </a>
+      <a href="external_style.html">
+          <li>External Style</li>
+        </a>
+      <a href="rounded_corner.html">
+          <li>Rounded Corners</li>
+      </a>
+      <a href="border_image.html">
+          <li>Border Images</li>
+      </a>
+      <a href="background.html">
+          <li>Backgrounds</li>
+      </a>
+      <a href="color.html">
+          <li>Colors</li>
+      </a>
+      <a href="color_keyword.html">
+          <li>Color Keywords</li>
+      </a>
+      <a href="gradient.html">
+          <li>Gradients</li>
+      </a>
+      <a href="shadow.html">
+          <li>Shadows</li>
+      </a>
+      <a href="text_effect.html">
+          <li>Text Effects</li>
+      </a>
+      <a href="web_font.html">
+          <li>Web Fonts</li>
+      </a>
+      <a href="2d_transform.html">
+          <li>2D Transforms</li>
+      </a>
+      <a href="3d_transform.html">
+          <li>3D Transforms</li>
+      </a>
+      <a href="transition.html">
+          <li>Transitions</li>
+      </a>
+      <a href="animation.html">
+          <li>Animations</li>
+      </a>
+      <a href="tooltip.html">
+          <li>Tooltips</li>
+      </a>
+      <a href="style_image.html">
+          <li>Style Images</li>
+      </a>
+      <a href="image_reflection.html">
+          <li>Image Reflection</li>
+      </a>
+      <a href="object-fit.html">
+          <li>Object-Fit</li>
+      </a>
+      <a href="object-position.html">
+          <li>Object-Position</li>
+      </a>
+      <a href="button.html">
+          <li>Buttons</li>
+      </a>
+      <a href="pagination.html">
+          <li>Pagination</li>
+      </a>
+      <a href="multiple_column.html">
+          <li>Multiple Columns</li>
+      </a>
+      <a href="user_interface.html">
+          <li>User Interface</li>
+      </a>
+      <a href="variable.html">
+          <li>Variables</li>
+      </a>
+      <a href="box_sizing.html">
+          <li>Box Sizing</li>
+      </a>
+      <a href="media_queries.html">
+          <li>Media Queries</li>
+      </a>
+      <a href="mq_example.html">
+          <li>MQ Examples</li>
+      </a>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Tugas Pertemuan 3</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iste dolores pariatur veritatis, quos, et sapiente cupiditate voluptatum quis aperiam corrupti quibusdam harum dolor nesciunt velit. Praesentium libero doloremque est?</p>
+<p>Ipsum, architecto fugiat accusamus officiis illo excepturi cum esse autem deserunt, itaque incidunt reiciendis ratione non ullam, pariatur voluptates sapiente facere in sunt iure harum perferendis minus iste. Asperiores, porro.</p>
+<p>Adipisci sapiente iusto neque, ullam ipsam labore alias autem amet rerum, reiciendis dolorum pariatur temporibus quasi officia deleniti voluptates dolorem ea similique illum quo sunt assumenda, incidunt nesciunt quae. Delectus!</p>
+<p>Aliquid voluptates officia similique dolorem molestias voluptatum aperiam corrupti, fugiat illo animi, ea provident accusantium voluptatem nesciunt asperiores perferendis alias esse quidem voluptate commodi incidunt odio nihil et. Libero, sunt?</p>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Tentang Saya</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
+
