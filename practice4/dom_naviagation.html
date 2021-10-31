@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Navigation</title>
+</head>
+<body>
+    <h1 id="id01">My First Page</h1>
+    <p id="id02"></p>
+    <script>
+        document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;
+    </script><br><br>
+
+    <h2>JavaScript HTMLDOM</h2>
+    <p>Displaying document.documentElement</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = document.documentElement.innerHTML;
+    </script><br><br>
+
+    <h1 id="id03">My First Page</h1>
+    <p id="id04"></p>
+    <script>
+        document.getElementById("id04").innerHTML = document.getElementById("id03").nodeName;
+    </script><br><br>
+
+    <h1 id="id05">My First Page</h1>
+    <p id="id06"></p>
+    <script>
+        document.getElementById("id06").innerHTML = document.getElementById("id05").nodeType;
+    </script>
+</body>
+</html>
