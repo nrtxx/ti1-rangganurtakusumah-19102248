@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Documents</title>
+</head>
+<body>
+    <label>Rumus Luas Segitiga </label><br>
+    <input id="tinggi" type="number" placeholder="masukkan tinggi"><br>
+    <input id="alas" type="number" placeholder="masukkan alas"><br>
+    <button id="hitung">Hitung</button>
+    <label>Hasil : </label> <label id="hasil">0</label><br>
+
+    <script>
+        document.getElementById("hitung").onclick = function() {hitung_luas_segitiga()};
+
+        function hitung_luas_segitiga() {
+            var a = document.getElementById("alas").value;
+            var t = document.getElementById("tinggi").value;
+            var hasil = 0.5 * a * t;
+            document.getElementById("hasil").innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>
