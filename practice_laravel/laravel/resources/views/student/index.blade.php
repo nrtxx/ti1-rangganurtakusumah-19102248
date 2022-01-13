@@ -25,6 +25,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
+                            <th>Foto</th>
                             <th>Nim</th>
                             <th>Nama</th>
                             <th>Jenis Kelamin</th>
@@ -36,11 +37,12 @@
                         @forelse ($students as $mahasiswa)
                         <tr>
                             <th>{{$loop->iteration}}</th>
-                                <td><a href="{{ route('student.show',['student' => $mahasiswa->id]) }}">{{$mahasiswa->nim}}</a></td>
-                                <td>{{$mahasiswa->name}}</td>
-                                <td>{{$mahasiswa->gender == 'P'?'Perempuan':'Laki-laki'}}</td>
-                                <td>{{$mahasiswa->departement}}</td>
-                                <td>{{$mahasiswa->address == '' ? 'N/A' : $mahasiswa->address}}</td>
+                            <td><img height="30px" src="{{url('')}}/{{$mahasiswa->image}}" class="rounded" alt=""></td>
+                            <td><a href="{{ route('student.show',['student' => $mahasiswa->id]) }}">{{$mahasiswa->nim}}</a></td>
+                            <td>{{$mahasiswa->name}}</td>
+                            <td>{{$mahasiswa->gender == 'P'?'Perempuan':'Laki-laki'}}</td>
+                            <td>{{$mahasiswa->departement}}</td>
+                            <td>{{$mahasiswa->address == '' ? 'N/A' : $mahasiswa->address}}</td>
                         </tr>
                         @empty
                         <td colspan="6" class="text-center">Tidak ada data...</td>
